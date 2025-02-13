@@ -72,3 +72,11 @@ function findEmployee(employees, name){
     return employees.find(employee => employee.name === name);
 }
 console.log(findEmployee(employees, "Charlie"));
+
+// Task 8 
+let ordersA = [{id: 1, customer: "Alice"}, {id: 2, customer: "Bob"}];
+let ordersB = [{id: 3, customer: "Charlie"}, {id: 4, customer: "David"}];
+function combineOrders(order1, order2) {
+    return [...order1, ...order2]
+}
+console.log(combineOrders (ordersA, ordersB)); 
